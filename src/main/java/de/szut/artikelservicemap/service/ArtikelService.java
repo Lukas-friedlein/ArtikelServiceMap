@@ -12,7 +12,7 @@ public class ArtikelService {
 
     private ArtikelDao artikelDao;
 
-    private ArtikelService() {
+    public ArtikelService() {
         artikelDao = new ArtikelDao();
     }
 
