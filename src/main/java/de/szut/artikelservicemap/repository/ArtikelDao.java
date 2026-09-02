@@ -1,7 +1,11 @@
 package de.szut.artikelservicemap.repository;
 
 import de.szut.artikelservicemap.model.Artikel;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 import java.util.HashMap;

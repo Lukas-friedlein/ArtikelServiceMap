@@ -1,3 +1,37 @@
 ### Alle Artikel anzeigen
 GET http://localhost:8080/myappdata/articles
 Accept: application/json
+
+### Artikel mit der ID 1 einlesen
+GET http://localhost:8080/myappdata/articles/1
+Accept: application/json
+
+### Neuen Artikel mit ID = 3 hinzufügen
+POST http://localhost:8080/myappdata/articles
+Content-Type: application/json
+
+{
+  "id": 3,
+  "bezeichnung": "Big Mac",
+  "beschreibung": "etwas schimmlig aber noch schmackhaft",
+  "preisEK": 1.56,
+  "preisVK": 4.99
+}
+
+### Artikel mit ID = 3 ändern
+PUT http://localhost:8080/myappdata/articles
+Content-Type: application/json
+
+{
+  "id": 3,
+  "bezeichnung": "Big Mac ultra Menu",
+  "beschreibung": "etwas schimmlig aber noch schmackhaft extra ranzige pommes",
+  "preisEK": 1.76,
+  "preisVK": 5.99
+}
+
+
+### Artikel mit der ID = 3 löschen
+DELETE http://localhost:8080/myappdata/articles/3
+Accept: application/json
+
